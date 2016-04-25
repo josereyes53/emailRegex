@@ -2,7 +2,7 @@
 
 import re
 
-regex = r"(\w+(\.?\w+)*(\w+)?)\+?\w*@(\w+\.?\w+?\.(com|org|net|edu))"
+regex = r"(\w+(\.?\w+)*(\w+)?)\+?\w*@(\w+(\.?\w+?)*\.(com|org|net|edu))"
 
 def emailCheck (email):
     if re.search(regex, email):
